@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sukolilo Service Guide</title>
+    <style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fb;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    .header {
+        background-color: #0f3d68;
+        color: white;
+        padding: 35px 20px;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    .header p {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .section-title {
+        background-color: white;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 12px;
+        border-left: 6px solid #0f3d68;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .section-title h2 {
+        margin: 0;
+        color: #0f3d68;
+    }
+
+    .service {
+        background-color: white;
+        margin-top: 18px;
+        padding: 22px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .service h3 {
+        margin-top: 0;
+        color: #111827;
+    }
+.service h3 {
+    cursor: pointer;
+}
+    .service p {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .service ul {
+        margin-top: 5px;
+        padding-left: 25px;
+    }
+
+    .service li {
+        margin-bottom: 6px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding: 25px;
+        background-color: #0f3d68;
+        color: white;
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+
+        .header h1 {
+            font-size: 27px;
+        }
+
+        .header p {
+            font-size: 15px;
+        }
+
+        .container {
+            padding: 0 12px;
+        }
+
+        .service {
+            padding: 18px;
+        }
+    }
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 25px 20px;
+    background-color: #f5f7fb;
+}
+
+.categories button {
+    border: 1px solid #d1d5db;
+    padding: 11px 20px;
+    border-radius: 25px;
+    background-color: white;
+    color: #1f2937;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.categories button:hover {
+    background-color: #0f3d68;
+    color: white;
+}
+.search-box {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 18px auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.search-box input:focus {
+    border-color: #0f3d68;
+    box-shadow: 0 0 0 3px rgba(15, 61, 104, 0.1);
+}
+.service-content {
+    display: block;
+}
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 16px 20px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.top-menu a:hover {
+    color: #2563eb;
+}
+</style>
+</head>
+
+<body>
+    <!-- HERO SUKOLILO SERVICE GUIDE -->
+<div style="
+    width: 100%;
+    min-height: 500px;
+    background-image: linear-gradient(
+        rgba(0, 40, 80, 0.25),
+        rgba(0, 40, 80, 0.35)
+    ), url('sukolilo-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 8%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+">
+
+    <!-- BAGIAN KIRI -->
+    <div style="
+        color: white;
+        max-width: 600px;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    ">
+    <img src="logo-unesa.png" alt="Logo UNESA" style="
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+">
+
+        <h1 style="
+            font-size: 48px;
+            margin: 0 0 12px 0;
+            font-weight: 800;
+        ">
+            Sukolilo Service Guide
+        </h1>
+
+        <p style="
+            font-size: 22px;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        ">
+            Informasi Pelayanan Kecamatan Sukolilo
+        </p>
+
+        <p style="
+            font-size: 17px;
+            margin: 0 0 25px 0;
+        ">
+            Lebih Mudah, Lebih Dekat, untuk Anda.
+        </p>
+
+        <a href="#panduan" style="
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    color: #064b78;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+">
+    Lihat Panduan Layanan
+</a>
+
+    </div>
+
+
+    <!-- BAGIAN KANAN -->
+    <div style="
+        width: 330px;
+        background: rgba(255,255,255,0.95);
+        border-radius: 18px;
+        padding: 28px;
+        box-sizing: border-box;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+transform: translateY(35px);
+        color: #333;
+    ">
+
+        <h2 style="
+            margin: 0 0 20px 0;
+            color: #064b78;
+            font-size: 24px;
+        ">
+            Informasi Layanan
+        </h2>
+
+        <p style="margin: 0 0 16px 0; line-height: 1.6;">
+            <strong>Jam Operasional </strong><br>
+            Senin–Jumat<br>
+            08.00–16.00 WIB
+        </p>
+
+        <p style="margin: 0 0 16px 0; line-height: 1.6;">
+            <strong>Lokasi Kantor Kecamatan</strong><br>
+            Jl. Nginden Semolo No. 89, Surabaya
+        </p>
+
+        <p style="margin: 0; line-height: 1.6;">
+            <strong>Informasi & Kontak Kecamatan</strong><br>
+            Telp: 081393809868
+        </p>
+
+    </div>
+
+</div>
+<!-- END HERO -->
+
+<nav class="top-menu">
+    <a href="#beranda">Beranda</a>
+    <a href="#panduan">Panduan Layanan</a>
+    <a href="#tentang">Tentang Magang</a>
+</nav>
+<section class="container">
+    <div class="section-title">
+
+        <h2>Visi & Misi Kecamatan Sukolilo</h2>
+
+        <p>
+            Arah penyelenggaraan pemerintahan Kecamatan Sukolilo
+            mengacu pada visi dan misi pembangunan Kota Surabaya.
+        </p>
+
+        <h3>Visi</h3>
+
+        <p>
+            <strong>
+                “Transformasi Surabaya Menuju Kota Dunia yang Maju,
+                Humanis, dan Berkelanjutan.”
+            </strong>
+        </p>
+
+        <h3>Misi</h3>
+
+        <ol>
+            <li>Mengakselerasi Transformasi Pengembangan Sektor Ekonomi Unggulan.</li>
+            <li>Mempercepat Transformasi Penciptaan SDM Unggul dan Berkarakter.</li>
+            <li>Mempercepat Transformasi Pelayanan Publik dan Reformasi Birokrasi.</li>
+            <li>Memantapkan Ketahanan Daerah melalui Pembangunan Infrastruktur yang Berkelanjutan.</li>
+            <li>Harmonisasi Sosial Masyarakat untuk Mewujudkan Kesejahteraan Sosial.</li>
+        </ol>
+
+    </div>
+</section>
+<div id="panduan" class="categories">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari layanan, misalnya KTP, KK, KRK..."
+            onkeyup="searchService()"
+        >
+
+    </div>
+
+
+    <button onclick="showCategory('all')">
+        Semua
+    </button>
+
+    <button onclick="showCategory('kependudukan')">
+        Kependudukan
+    </button>
+
+    <button onclick="showCategory('pembangunan')">
+        Pembangunan
+    </button>
+
+    <button onclick="showCategory('kesra')">
+        Kesejahteraan Rakyat
+    </button>
+
+</div>
+
+
+<div class="container">
+    <div class="category-section kependudukan">
+    <div class="section-title">
+
+    <h2>Bidang Pemerintahan (Kependudukan)</h2>
+
+</div>
+
+
+ <div class="service">
+
+    <h3 onclick="toggleService(this)">
+        1. Cetak Kartu Keluarga karena Hilang
+    </h3>
+
+    <div class="service-content">
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KTP</li>
+            <li>Surat Kehilangan KK</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="service">
+    <h3 onclick="toggleService(this)">
+        2. Cetak Kartu Keluarga karena Rusak
+    </h3>
+
+    <div class="service-content">
+        <p>Persyaratan:</p>
+        <ul>
+            <li>KK</li>
+            <li>Dokumen pendukung sesuai kebutuhan</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service">
+    <h3 onclick="toggleService(this)">3. Perubahan Biodata dalam KK</h3>
+
+    <div class="service-content">
+        <p>Persyaratan:</p>
+        <ul>
+            <li>KK</li>
+            <li>Dokumen Pendukung Perubahan Biodata</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service">
+    <h3 onclick="toggleService(this)">4. Cetak Ulang KTP YOB</h3>
+
+    <div class="service-content">
+        <p>Persyaratan:</p>
+        <ul>
+            <li>KTP</li>
+            <li>KK</li>
+            <li>Surat Pernyataan Merubah Foto apabila tanda tangan di KTP kosong</li>
+            <li>Surat Pernyataan Tanda Tangan apabila tanda tangan di KTP kosong</li>
+            <li>Foto Bukti Kepemilikan IKD</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service">
+    <h3 onclick="toggleService(this)">5. Cetak Ulang KTP</h3>
+
+    <div class="service-content">
+        <p>Persyaratan:</p>
+        <ul>
+            <li>KTP</li>
+            <li>KK</li>
+            <li>Surat Kehilangan Kepolisian apabila alasan pengajuan KTP hilang</li>
+            <li>Foto Bukti Kepemilikan IKD</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service">
+    <h3 onclick="toggleService(this)">6. Pengajuan KTP Baru usia 17 tahun / usia &lt;17 tahun</h3>
+
+    <div class="service-content">
+        <p>Persyaratan:</p>
+        <ul>
+            <li>KK</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">7. Permutakhiran Gelar dalam KK</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <!-- persyaratan nomor 7 tetap -->
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">8. Akta Kelahiran</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KK</li>
+            <li>KTP Orang Tua</li>
+            <li>Buku Nikah Orang Tua</li>
+            <li>Surat Keterangan Lahir</li>
+            <li>Fotokopi KTP 2 Orang Saksi</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">9. Akta Kematian</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KK Alm</li>
+            <li>KTP Alm</li>
+            <li>Surat Keterangan Meninggal Dunia</li>
+            <li>KTP Pelopor</li>
+            <li>Fotokopi KTP 2 Orang Saksi</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">10. Pindah Keluar</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KK</li>
+            <li>KTP Pelapor</li>
+            <li>KK Tujuan apabila status kepindahan menumpang KK</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">11. Kutipan Kedua Akta Kelahiran (Cetak Ulang Akta)</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KTP</li>
+            <li>KK</li>
+            <li>Akta Kelahiran</li>
+            <li>Surat Kehilangan dari Kepolisian apabila hilang</li>
+            <li>Surat Keabsahan Akta Kelahiran</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">12. Kutipan Kedua Kematian karena Rusak</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KTP</li>
+            <li>Akta Kematian</li>
+            <li>Fotokopi KK</li>
+            <li>Surat Pernyataan yang menyatakan semua saudara kandung jika tidak keberatan diwakilkan oleh salah satu saudara kandung bermaterai 10.000 (optional)</li>
+            <li>Surat Pernyataan jika memang anak Tunggal bermaterai 10.000 (optional)</li>
+            <li>Surat Keabsahan apabila akta kematian terbitan luar Kota Surabaya</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">13. Kutipan Kedua Kematian karena Hilang Domisili Kota Surabaya</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KTP</li>
+            <li>Fotokopi Akta Kematian</li>
+            <li>Surat Kehilangan dari Kepolisian (wajib)</li>
+            <li>Fotokopi KK (wajib)</li>
+            <li>KTP Saudara Kandung bermaterai 10.000 (optional)</li>
+            <li>Surat Pernyataan jika memang anak Tunggal bermaterai 10.000 (optional)</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">14. Kutipan Kedua Perkawinan</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KK</li>
+            <li>KTP</li>
+            <li>Kutipan Akta Perkawinan</li>
+            <li>Surat Keabsahan Akta Perkawinan jika akta perkawinan terbitan luar Kota Surabaya</li>
+            <li>Lampiran Perjanjian Pernikahan</li>
+            <li>Surat Kehilangan jika akta perkawinan hilang</li>
+        </ul>
+
+    </div>
+
+</div>
+<div class="service">
+
+    <h3 onclick="toggleService(this)">15. Akta Perkawinan dan Cetak KK</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>Surat Keterangan Kawin dari Pemuka Agama</li>
+            <li>Pas Foto Calon Mempelai 4x6</li>
+            <li>KK bila calon mempelai bukan KK Surabaya</li>
+            <li>Lampiran Perjanjian Pernikahan</li>
+            <li>Surat Keterangan tidak ada halangan menikah</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">16. KIA (Kartu Identitas Anak)</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>KK</li>
+            <li>KTP Orang Tua</li>
+            <li>Akta Kelahiran</li>
+            <li>Buku Nikah Orang Tua</li>
+            <li>Scan Rapot / Surat Keterangan Sekolah (usia &gt;5 tahun)</li>
+            <li>Foto Anak (usia &gt;5 tahun)</li>
+        </ul>
+
+    </div>
+
+</div>
+</div>
+    <hr>
+
+
+    <!-- ========================= -->
+    <!-- PEMBANGUNAN -->
+    <!-- ========================= -->
+<div class="category-section pembangunan">
+
+    <div class="section-title">
+
+        <h2>Bidang Pembangunan</h2>
+
+    </div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">1. Permohonan KRK Rumah Tinggal</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>NIK Pemohon</li>
+            <li>SPTJM KRK &amp; PBG</li>
+            <li>Status / Bukti Surat Tanah, seperti Petok/Yasan, Eigendom, IPEDA, atau Sertifikat</li>
+            <li>Form sketsa persil dan foto lokasi yang diberi titik koordinat</li>
+            <li>Koordinat dapat menggunakan koordinat dari peta/Google Maps dan dilengkapi tanda tangan pemilik tanah</li>
+            <li>Akta pendirian</li>
+            <li>Peta bidang untuk surat tanah IPEDA, Eigendom, Petok/Letter C, atau Tanah Yasan</li>
+            <li>Rekomendasi dari BPKAD untuk surat tanah IPEDA, Eigendom, Petok/Letter C, atau Tanah Yasan</li>
+            <li>Surat pernyataan penguasaan fisik tanah selama 20 tahun berturut-turut untuk surat tanah IPEDA, Eigendom, Petok/Letter C, atau Tanah Yasan</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">2. Permohonan PBG Rumah Tinggal</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>NIK Pemohon</li>
+            <li>SPTJM KRK &amp; PBG</li>
+            <li>Status / Bukti Surat Tanah, seperti Petok/Yasan, Eigendom, IPEDA, atau Sertifikat</li>
+            <li>Form sketsa persil dan foto lokasi yang diberi titik koordinat serta tanda tangan pemilik tanah</li>
+            <li>Akta pendirian</li>
+            <li>Peta bidang untuk surat tanah tertentu</li>
+            <li>Rekomendasi dari BPKAD untuk surat tanah tertentu</li>
+            <li>Surat pernyataan penguasaan fisik tanah selama 20 tahun berturut-turut untuk surat tanah tertentu</li>
+            <li>Gambar arsitektur bangunan dalam format DWG/AutoCAD 2007</li>
+            <li>KRK yang sudah diterbitkan sebagai salah satu kelengkapan pengajuan PBG</li>
+        </ul>
+
+    </div>
+
+</div>
+</div>
+    <hr>
+
+
+    <!-- ========================= -->
+    <!-- KESEJAHTERAAN RAKYAT -->
+    <!-- ========================= -->
+<div class="category-section kesra">
+
+    <div class="section-title">
+
+        <h2>Bidang Kesejahteraan Rakyat</h2>
+
+    </div>
+
+
+ <div class="service">
+
+    <h3 onclick="toggleService(this)">1. Permohonan Dispensasi Nikah</h3>
+
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+<a href="https://sswalfa.surabaya.go.id/home" target="_blank" class="service-link">
+    Buka SSWALFA
+</a>
+        <ul>
+            <li>Pengajuan dispensasi nikah melalui website SSWALFA</li>
+            <li>Pengajuan dilakukan maksimal/minimal 10 hari sebelum calon pengantin (catin) sesuai ketentuan yang berlaku</li>
+            <li>N1 (Pengantar Nikah)</li>
+            <li>N2 (Permohonan untuk ke KUA)</li>
+            <li>N3 jika Catin P &lt;21 dan Catin L &lt;23</li>
+            <li>N5 atau N6 jika status catin cerai mati</li>
+            <li>Surat Pernyataan Belum Menikah</li>
+            <li>Surat Keterangan Catin Sehat dari Puskesmas</li>
+            <li>N10 (Pengantar Nikah dari KUA)</li>
+            <li>Surat Pengantar RT/RW</li>
+            <li>Kartu Keluarga Catin dan Wali Nikah</li>
+            <li>KTP Catin</li>
+            <li>Akta Kelahiran Catin</li>
+            <li>Ijazah Terakhir Catin</li>
+            <li>Akta Kematian jika mantan suami dan orang tua catin meninggal</li>
+            <li>Sertifikat kelas Catin</li>
+            <li>Apabila calon istri di bawah 17 tahun dan suami di bawah 19 tahun, minta surat putusan pengadilan menikah di bawah umur</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="service">
+
+    <h3 onclick="toggleService(this)">2. Permohonan NIB</h3>
+<a href="https://oss.go.id/id" target="_blank" class="service-link">
+    Buka OSS
+</a>
+    <div class="service-content">
+
+        <p>Persyaratan:</p>
+
+        <ul>
+            <li>Nama Pemilik</li>
+            <li>Nama Usaha / Brand</li>
+            <li>NPWP (optional)</li>
+            <li>Pendaftaran melalui OSS</li>
+        </ul>
+
+    </div>
+
+</div>
+</div>
+
+
+    <hr>
+
+    <h2>Informasi</h2>
+
+    <p>
+        Sukolilo Service Guide merupakan portal informasi
+        pelayanan publik Kecamatan Sukolilo.
+    </p>
+</div>
+
+<section id="tentang" class="container">
+    <div class="section-title">
+        <h2>Tentang Magang</h2>
+
+        <p>
+            Kegiatan Magang Riset S1 Ilmu Politik UNESA 2026
+        </p>
+
+        <p>
+            <strong>
+                Optimalisasi Akses Informasi Pelayanan Publik Melalui
+                Sukolilo Service Guide Berbasis Kebutuhan Masyarakat
+            </strong>
+        </p>
+
+        <p><strong>Tim Penyusun Mahasiswa:</strong></p>
+
+        <ul>
+            <li>Septi Marwa Afifah Putri (24041614062)</li>
+            <li>Anggita Putriana (24041614069)</li>
+            <li>Khalishah Azmi Wibowo (24041614117)</li>
+            <li>Febi Tri Prasetya (24041614145)</li>
+            <li>Frida Rahmafitri Hergiajana (24041614088)</li>
+            <li>Difa Danieldo (24041614094)</li>
+        </ul>
+
+        <p>
+            <strong>Dosen Pembimbing Lapangan:</strong><br>
+            Ken Bimo Sultoni, M.Si. (NIP: 202504046)
+        </p>
+
+        <p>
+            Kegiatan magang riset berbasis mini project
+            (Political Action Research) ini mengintegrasikan
+            pengetahuan tata kelola pemerintahan dengan kebutuhan
+            praktis masyarakat di Kecamatan Sukolilo.
+        </p>
+
+        <p>
+            Luaran berupa <strong>Sukolilo Service Guide</strong>
+            berfungsi sebagai media digital pendukung yang menyajikan
+            informasi pelayanan publik secara terstruktur, sederhana,
+            dan mudah diakses.
+        </p>
+    </div>
+</section>
+<div class="footer">
+
+    <p>
+        Sukolilo Service Guide - Kecamatan Sukolilo
+    </p>
+
+</div>
+<script>
+
+
+    function showCategory(category) {
+
+        const sections = document.querySelectorAll('.category-section');
+
+        sections.forEach(function(section) {
+
+            if (category === 'all') {
+
+                section.style.display = 'block';
+
+            } 
+            else if (section.classList.contains(category)) {
+
+                section.style.display = 'block';
+
+            } 
+            else {
+
+                section.style.display = 'none';
+
+            }
+
+        });
+
+    }
+    function toggleService(title) {
+    const content = title.nextElementSibling;
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+
+}
+function searchService() {
+    const input = document.getElementById("searchInput");
+    const keyword = input.value.toLowerCase().trim();
+    const services = document.querySelectorAll(".service");
+
+    services.forEach(function(service) {
+        const text = service.innerText.toLowerCase();
+
+        if (text.includes(keyword)) {
+            service.style.display = "block";
+        } else {
+            service.style.display = "none";
+        }
+    });
+}
+</script>
+</body>
+</html>
